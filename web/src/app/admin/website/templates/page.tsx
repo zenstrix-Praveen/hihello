@@ -1,0 +1,5 @@
+import WebsitePageContentForm from "@/components/admin/WebsitePageContentForm";
+
+export default function WebsiteTemplatesContentPage() {
+  return <section className="max-w-5xl"><p className="text-sm text-blue-600">Website Management</p><h1 className="mt-1 text-3xl font-bold text-slate-900">Templates Page</h1><p className="mt-2 mb-6 text-sm text-slate-500">Manage the public gallery copy. Edit the actual template designs in the separate Templates module.</p><WebsitePageContentForm section="templates" title="Public Templates Page Content" defaults={{ page_title: "Choose a design that represents you.", page_subtitle: "Start with a professionally designed digital business card and customize the colors, typography and content to match your brand.", hero_text: "Digital Card Templates", cta_text: "Explore Templates", cta_url: "/templates", enabled: true }} fields={[{ key: "page_title", label: "Page Title" }, { key: "page_subtitle", label: "Page Subtitle", type: "textarea" }, { key: "hero_text", label: "Hero Text" }, { key: "cta_text", label: "CTA Text" }, { key: "cta_url", label: "CTA URL", type: "url" }]}/></section>;
+}

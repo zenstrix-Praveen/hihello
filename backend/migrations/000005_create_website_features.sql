@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS website_features (
+    id BIGSERIAL PRIMARY KEY,
+    title VARCHAR(200) NOT NULL,
+    description TEXT NOT NULL DEFAULT '',
+    icon_key VARCHAR(100) NOT NULL DEFAULT '',
+    sort_order INT NOT NULL DEFAULT 0,
+    is_enabled BOOLEAN NOT NULL DEFAULT TRUE,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);

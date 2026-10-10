@@ -1,0 +1,46 @@
+"use client";
+import Link from "next/link";
+import {usePathname} from "next/navigation";
+import {useEffect,useState} from "react";
+import {Activity,BarChart3,BadgeDollarSign,Bell,Building2,ChevronDown,ContactRound,CreditCard,Globe2,LayoutDashboard,LayoutTemplate,Nfc,QrCode,Settings,Shield,ShieldCheck,Users,X} from "lucide-react";
+import {useAdminLocale} from "@/lib/admin-locale";
+import BrandLogo from "@/components/brand/BrandLogo";
+
+type Child={label:string;href:string};type Item={label:string;href:string;icon:typeof LayoutDashboard;children?:Child[]};
+const nav:Item[]=[
+ {label:"Dashboard",href:"/admin",icon:LayoutDashboard},
+ {label:"Website",href:"/admin/website",icon:Globe2,children:[{label:"Home",href:"/admin/website/home"},{label:"Features",href:"/admin/website/features"},{label:"Templates",href:"/admin/website/templates"},{label:"Pricing",href:"/admin/website/pricing"},{label:"Business / Enterprise",href:"/admin/website/business"},{label:"Contact",href:"/admin/website/contact"},{label:"Header / Navigation",href:"/admin/website/header"},{label:"Footer",href:"/admin/website/footer"},{label:"SEO / General Settings",href:"/admin/website/seo"}]},
+ {label:"Organizations",href:"/admin/organizations",icon:Building2,children:[{label:"All Organizations",href:"/admin/organizations"},{label:"Add Organization",href:"/admin/organizations?create=1"}]},
+ {label:"Users",href:"/admin/users",icon:Users,children:[{label:"All Users",href:"/admin/users"},{label:"Add User",href:"/admin/users?create=1"},{label:"Active Users",href:"/admin/users?status=active"},{label:"Suspended Users",href:"/admin/users?status=suspended"}]},
+ {label:"Digital Cards",href:"/admin/cards",icon:CreditCard,children:[{label:"All Cards",href:"/admin/cards"},{label:"Create Card",href:"/admin/cards/new"},{label:"Active Cards",href:"/admin/cards?status=published"},{label:"Draft Cards",href:"/admin/cards?status=draft"},{label:"Suspended Cards",href:"/admin/cards?status=suspended"},{label:"Expired / Archived",href:"/admin/cards?status=archived"}]},
+ {label:"Contacts",href:"/admin/contacts",icon:ContactRound,children:[{label:"All Contacts",href:"/admin/contacts"},{label:"Add Contact",href:"/admin/contacts?create=1"}]},
+ {label:"Analytics",href:"/admin/analytics",icon:BarChart3,children:[{label:"User Analytics",href:"/admin/analytics?view=users"},{label:"Card Analytics",href:"/admin/analytics?view=cards"},{label:"QR Analytics",href:"/admin/analytics?view=qr"},{label:"NFC Analytics",href:"/admin/analytics?view=nfc"},{label:"Revenue Analytics",href:"/admin/analytics?view=revenue"},{label:"Traffic Analytics",href:"/admin/analytics?view=traffic"}]},
+ {label:"Templates",href:"/admin/templates",icon:LayoutTemplate,children:[{label:"All Templates",href:"/admin/templates"},{label:"Add Template",href:"/admin/templates?create=1"}]},
+ {label:"QR Codes",href:"/admin/qr-codes",icon:QrCode,children:[{label:"All QR Codes",href:"/admin/qr-codes"},{label:"Generate QR",href:"/admin/qr-codes?create=1"},{label:"Scan Analytics",href:"/admin/qr-codes?view=scans"}]},
+ {label:"NFC",href:"/admin/nfc",icon:Nfc,children:[{label:"All NFC Tags",href:"/admin/nfc"},{label:"Add NFC Tag",href:"/admin/nfc?create=1"},{label:"Assign / Reassign",href:"/admin/nfc?view=assign"},{label:"Tap Analytics",href:"/admin/nfc?view=taps"}]},
+ {label:"Plans & Billing",href:"/admin/plans",icon:BadgeDollarSign,children:[{label:"Plans",href:"/admin/plans?tab=plans"},{label:"Create Plan",href:"/admin/plans?tab=plans&create=1"},{label:"Subscriptions",href:"/admin/plans?tab=subscriptions"},{label:"Payments",href:"/admin/plans?tab=payments"},{label:"Transactions",href:"/admin/plans?tab=transactions"}]},
+ {label:"Notifications",href:"/admin/notifications",icon:Bell,children:[{label:"All Notifications",href:"/admin/notifications?tab=all"},{label:"Send Notification",href:"/admin/notifications?tab=send"},{label:"History",href:"/admin/notifications?tab=history"}]},
+ {label:"Administration",href:"/admin/administration",icon:Shield,children:[{label:"Users",href:"/admin/administration/users"},{label:"User Types",href:"/admin/administration/user-types"},{label:"Roles",href:"/admin/administration/roles"},{label:"Role Permissions",href:"/admin/administration/role-permissions"},{label:"Permissions",href:"/admin/administration/permissions"}]},
+ {label:"Security",href:"/admin/security",icon:ShieldCheck,children:[{label:"Admin Users",href:"/admin/security?tab=admins"},{label:"Password Policy",href:"/admin/security?tab=policy"},{label:"Sessions",href:"/admin/security?tab=sessions"},{label:"Audit Logs",href:"/admin/security?tab=audit"}]},
+ {label:"Settings",href:"/admin/settings",icon:Settings,children:[{label:"General Settings",href:"/admin/settings?tab=General"},{label:"Admin Profile",href:"/admin/settings/profile"},{label:"Country / State / City",href:"/admin/settings?tab=Location"},{label:"Language / Locale",href:"/admin/settings?tab=Localization"},{label:"Currency / Timezone",href:"/admin/settings?tab=Currency"},{label:"Email Settings",href:"/admin/settings?tab=Email"},{label:"Payment Settings",href:"/admin/settings?tab=Payment"},{label:"Branding",href:"/admin/settings?tab=Branding"}]},
+];
+const pathOf=(href:string)=>href.split("?")[0];
+const isSelected=(pathname:string,search:string,child:Child)=>{
+ const childPath=pathOf(child.href),current=new URLSearchParams(search),expected=new URLSearchParams(child.href.split("?")[1]??"");
+ const pathMatches=pathname===childPath||(child.label==="All Cards"&&pathname.startsWith("/admin/cards/")&&pathname!=="/admin/cards/new");
+ const navigationKeys=["status","create","tab","view"];
+ const hasNavigationState=[...current.keys()].some(key=>navigationKeys.includes(key));
+ const queryMatches=expected.size?[...expected.entries()].every(([key,value])=>current.get(key)===value)&&[...current.keys()].filter(key=>navigationKeys.includes(key)).every(key=>expected.has(key)):!hasNavigationState;
+ return pathMatches&&queryMatches;
+};
+export default function AdminSidebar({open=false,onClose=()=>{}}:{open?:boolean;onClose?:()=>void}){
+ const pathname=usePathname();const {t}=useAdminLocale();const [expanded,setExpanded]=useState<Record<string,boolean>>({});const [search,setSearch]=useState("");
+ useEffect(()=>{const sync=()=>setSearch(window.location.search.slice(1));const navigate=(event:Event)=>{const href=(event as CustomEvent<string>).detail;setSearch(href?.split("?")[1]??"")};sync();window.addEventListener("popstate",sync);window.addEventListener("admin:navigate",navigate);return()=>{window.removeEventListener("popstate",sync);window.removeEventListener("admin:navigate",navigate)}},[pathname]);
+ function clickChild(href:string){setSearch(href.split("?")[1]??"");window.dispatchEvent(new CustomEvent("admin:navigate",{detail:href}))}
+ return <>{open&&<button aria-label="Close navigation overlay" onClick={onClose} className="fixed inset-0 z-40 bg-slate-950/50 lg:hidden"/>}<aside className={`fixed inset-y-0 left-0 z-50 flex w-72 shrink-0 flex-col bg-[#07152f] text-white transition-transform lg:sticky lg:top-0 lg:h-screen lg:translate-x-0 ${open?"translate-x-0":"-translate-x-full"}`}><div className="flex min-h-20 items-center justify-between gap-2 border-b border-white/10 px-3 py-2"><BrandLogo className="h-12 w-[190px] max-w-[75%] rounded-sm bg-white p-1"/><div className="flex items-center gap-2"><span className="rounded-full bg-blue-500/20 px-2 py-1 text-[10px] text-blue-200">ADMIN</span><button type="button" aria-label="Close menu" onClick={onClose} className="rounded-lg p-2 text-white lg:hidden"><X size={19}/></button></div></div><nav className="min-h-0 flex-1 space-y-1 overflow-y-auto p-4">{nav.map(item=>{
+  const matchingChild=item.children?.find(c=>isSelected(pathname,search,c));
+  const active=pathname===item.href||Boolean(matchingChild)||(item.label==="Digital Cards"&&pathname.startsWith("/admin/cards/"))||(item.label==="Settings"&&pathname.startsWith("/admin/settings/"));const open=Boolean(active||expanded[item.label]);const Icon=item.icon;
+  if(!item.children)return <Link key={item.label} href={item.href} onClick={onClose} className={`flex items-center gap-3 rounded-xl px-3 py-3 ${active?"bg-blue-600":"text-slate-400 hover:bg-white/5 hover:text-white"}`}><Icon size={18}/><span className="text-sm">{t(item.label)}</span></Link>;
+  return <div key={item.label}><div className={`flex items-center rounded-xl ${active?"bg-blue-600":"text-slate-400 hover:bg-white/5 hover:text-white"}`}><button type="button" aria-expanded={open} onClick={()=>setExpanded(v=>({...v,[item.label]:!v[item.label]}))} className="flex min-w-0 flex-1 items-center gap-3 px-3 py-3 text-left"><Icon size={18}/><span className="text-sm">{t(item.label)}</span><ChevronDown size={15} className={`ml-auto transition-transform ${open?"rotate-180":""}`}/></button></div>{open&&<div className="ml-8 mt-1 space-y-1 border-l border-white/10 pl-3">{item.children.map(child=>{const selected=isSelected(pathname,search,child);return <Link key={child.label} href={child.href} onClick={()=>{clickChild(child.href);onClose()}} aria-current={selected?"page":undefined} className={`flex items-center rounded-xl px-3 py-2.5 ${selected?"bg-blue-600 text-white":"text-slate-400 hover:bg-white/5 hover:text-white"}`}><span className="text-sm">{t(child.label)}</span></Link>})}</div>}</div>
+ })}</nav></aside></>
+}

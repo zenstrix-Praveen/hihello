@@ -1,0 +1,8 @@
+ALTER TABLE contacts
+ADD COLUMN IF NOT EXISTS status VARCHAR(30) NOT NULL DEFAULT 'new';
+
+ALTER TABLE contacts
+ADD COLUMN IF NOT EXISTS notes TEXT NOT NULL DEFAULT '';
+
+CREATE INDEX IF NOT EXISTS idx_contacts_status
+ON contacts(status);

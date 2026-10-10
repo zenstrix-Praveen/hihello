@@ -1,0 +1,1 @@
+const fs=require('fs');let d={};for(let row of fs.readFileSync('.workspace-translations.txt','utf8').split(/\r?\n/)){let i=row.indexOf('|');if(i>0)d[row.slice(0,i)]=row.slice(i+1);}fs.writeFileSync('src/lib/customer-workspace-messages.ts','export const customerWorkspaceMessages: Record<string, string> = '+JSON.stringify(d,null,2)+';\n');

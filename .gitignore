@@ -1,0 +1,40 @@
+# Local credentials and configuration
+.env
+.env.*
+!.env.example
+!**/.env.example
+!.env.*.example
+!**/.env.*.example
+web/.env.local
+backend/.env
+**/.env.production
+
+# Build output, executables, logs, and database exports
+**/node_modules/
+**/.next/
+**/out/
+**/dist/
+**/build/
+*.exe
+backend/api
+*.test
+*.log
+*.dump
+*.backup.sql
+*.sql.backup
+*.backup
+*.sql.gz
+*.pgdump
+*.bak
+*.tmp
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+
+# Generated application artifacts
+web/.next/
+web/node_modules/
+web/artifacts/
+backend/.gocache/
+.gocache/

@@ -1,0 +1,361 @@
+Overview|نظرة عامة
+Welcome,|مرحبًا،
+Your cards, connections, and activity. All in one place.|بطاقاتك وجهات اتصالك ونشاطك في مكان واحد.
+Create Card|إنشاء بطاقة
+Recent Digital Cards|أحدث البطاقات الرقمية
+View all →|عرض الكل ←
+Quick actions|إجراءات سريعة
+QR Codes|رموز QR
+Generate and view QR codes for your published digital cards.|أنشئ رموز QR لبطاقاتك الرقمية المنشورة واعرضها.
+Published Cards|البطاقات المنشورة
+Publish a card before generating its QR code.|انشر بطاقة قبل إنشاء رمز QR الخاص بها.
+Your QR Codes|رموز QR الخاصة بك
+scans|عمليات مسح
+Download QR|تنزيل رمز QR
+Copy card link|نسخ رابط البطاقة
+Share QR|مشاركة رمز QR
+No QR codes yet.|لا توجد رموز QR بعد.
+Dbizcard NFC|Dbizcard NFC
+Close dialog|إغلاق النافذة
+Tap to connect|قرّب للتواصل
+NFC Tags|وسوم NFC
+Connect an NFC card or tag to your digital business card and share it with a simple tap.|اربط بطاقة أو وسم NFC ببطاقة أعمالك الرقمية وشاركها بمجرد التقريب.
+How NFC Works|كيف تعمل NFC
+Add NFC Tag|إضافة وسم NFC
+Upgrade Plan|ترقية الخطة
+NFC tag allowance|الحد المسموح لوسوم NFC
+Illustration of phones and an NFC tag sharing a digital card.|رسم لهواتف ووسم NFC تتشارك بطاقة رقمية.
+No NFC tags yet|لا توجد وسوم NFC بعد
+Add an NFC tag and connect it to one of your published digital cards. Dbizcard will provide a link to configure with compatible NFC hardware.|أضف وسم NFC واربطه بإحدى بطاقاتك المنشورة. سيوفر Dbizcard رابطًا لإعداده باستخدام أجهزة NFC المتوافقة.
+Publish a digital card before adding an NFC tag.|انشر بطاقة رقمية قبل إضافة وسم NFC.
+Add Your First NFC Tag|إضافة أول وسم NFC
+Learn How NFC Works|تعرّف على طريقة عمل NFC
+Your current plan does not include another NFC tag.|خطتك الحالية لا تسمح بإضافة وسم NFC آخر.
+Your NFC Tags|وسوم NFC الخاصة بك
+Tap links point to published cards and update as your tag activity is recorded.|توجّه روابط التقريب إلى البطاقات المنشورة وتتحدث مع تسجيل نشاط الوسم.
+The connected card is not published.|البطاقة المرتبطة غير منشورة.
+Edit Card|تعديل البطاقة
+Connected Card|البطاقة المرتبطة
+Tag ID|معرّف الوسم
+Public Destination|الوجهة العامة
+Tap Count|عدد مرات التقريب
+Last Tap|آخر تقريب
+Created|تاريخ الإنشاء
+View Card|عرض البطاقة
+Copy Link|نسخ الرابط
+Test Link|اختبار الرابط
+Edit|تعديل
+Archive|أرشفة
+NFC Tag Added|تمت إضافة وسم NFC
+Your NFC tag is connected to|وسم NFC مرتبط بـ
+NFC sharing URL|رابط مشاركة NFC
+Copy NFC Link|نسخ رابط NFC
+Open Link|فتح الرابط
+Open Card|فتح البطاقة
+Add Another Tag|إضافة وسم آخر
+Done|تم
+Tag Name *|اسم الوسم *
+My Business NFC Card|بطاقة NFC لأعمالي
+NFC Tag UID / Identifier|المعرّف الفريد لوسم NFC
+(optional)|(اختياري)
+04:A1:B2:C3:D4|04:A1:B2:C3:D4
+Leave empty if you do not have an identifier. This does not write anything to the physical tag.|اتركه فارغًا إن لم يكن لديك معرّف. هذا لا يكتب أي بيانات على الوسم الفعلي.
+Assigned Digital Card *|البطاقة الرقمية المرتبطة *
+Choose one of your published cards|اختر إحدى بطاقاتك المنشورة
+· Published|· منشورة
+There are no published cards available.|لا توجد بطاقات منشورة متاحة.
+Create a card|إنشاء بطاقة
+and publish it first.|وانشرها أولًا.
+Status|الحالة
+Active|نشط
+Inactive|غير نشط
+Configure the physical tag separately|إعداد الوسم الفعلي بشكل منفصل
+After saving, copy the NFC link and use a compatible NFC-writing device or application to write it to your tag. Dbizcard does not write NFC hardware from this page.|بعد الحفظ، انسخ رابط NFC واستخدم جهازًا أو تطبيقًا متوافقًا لكتابته على الوسم. لا يكتب Dbizcard على أجهزة NFC من هذه الصفحة.
+Cancel|إلغاء
+Continue|متابعة
+NFC card and compatible phone sharing a digital business card.|بطاقة NFC وهاتف متوافق يتشاركان بطاقة أعمال رقمية.
+NFC stands for Near Field Communication. Compatible devices can exchange small amounts of information when they are very close together. For Dbizcard, an NFC tag points visitors to your published digital card.|NFC تعني الاتصال قريب المدى. تستطيع الأجهزة المتوافقة تبادل كميات صغيرة من المعلومات عند تقريبها جدًا. يوجّه وسم NFC في Dbizcard الزوار إلى بطاقتك الرقمية المنشورة.
+Hardware and browser support varies. Locking a tag may make it permanently read-only; do so only if you understand that consequence. Dbizcard does not perform universal browser-based NFC writing.|يختلف دعم الأجهزة والمتصفحات. قد يجعل قفل الوسم محتواه للقراءة فقط نهائيًا؛ لا تفعل ذلك إلا إذا فهمت النتيجة. لا يوفر Dbizcard كتابة NFC عبر جميع المتصفحات.
+Create a Digital Card|إنشاء بطاقة رقمية
+NFC CARD|بطاقة NFC
+PHONE|هاتف
+DIGITAL CARD|بطاقة رقمية
+Set up your physical NFC tag|إعداد وسم NFC الفعلي
+The Test Link opens the redirect in a browser; it does not simulate or count a physical NFC tap.|يفتح اختبار الرابط وجهة إعادة التوجيه في المتصفح؛ ولا يحاكي أو يحتسب تقريب NFC فعليًا.
+Profile|الملف الشخصي
+Manage your personal information and account security.|إدارة معلوماتك الشخصية وأمان حسابك.
+Personal Information|المعلومات الشخصية
+Name|الاسم
+Email|البريد الإلكتروني
+Email changes are not enabled for this account.|تغيير البريد الإلكتروني غير متاح لهذا الحساب.
+Phone|الهاتف
+Account Information|معلومات الحساب
+Member since|عضو منذ
+Security|الأمان
+Change your password by confirming your current password first.|غيّر كلمة المرور بتأكيد كلمة المرور الحالية أولًا.
+Current password|كلمة المرور الحالية
+New password|كلمة المرور الجديدة
+Confirm new password|تأكيد كلمة المرور الجديدة
+Preferences|التفضيلات
+Language and communication preferences are not currently stored for customer accounts.|لا تُحفظ تفضيلات التواصل حاليًا لحسابات العملاء. يمكنك تغيير لغة العرض من القائمة العلوية.
+Your most recent records, up to 200.|أحدث سجلاتك، حتى ٢٠٠ سجل.
+No|لا توجد
+ yet.|بعد.
+yet.|بعد.
+Loading your data…|جارٍ تحميل بياناتك…
+Try again|إعادة المحاولة
+Current Plan|الخطة الحالية
+Manage billing →|إدارة الفوترة ←
+You don’t have a current subscription.|ليس لديك اشتراك حالي.
+Explore plans →|استعراض الخطط ←
+Analytics|التحليلات
+Activity recorded for your cards only.|النشاط المسجل لبطاقاتك فقط.
+views ·|مشاهدات ·
+QR scans ·|عمليات مسح QR ·
+NFC taps|مرات تقريب NFC
+No feature details are available for this plan.|لا تتوفر تفاصيل الميزات لهذه الخطة.
+TEST MODE — Razorpay test payments only.|وضع الاختبار — مدفوعات Razorpay التجريبية فقط.
+Plans & Billing|الخطط والفوترة
+Manage your subscription and payment history.|إدارة اشتراكك وسجل المدفوعات.
+Demo Payment is enabled for this local environment. No real money will be charged.|الدفع التجريبي مفعّل في هذه البيئة المحلية. لن تُخصم أموال حقيقية.
+Could not load payment options:|تعذر تحميل خيارات الدفع:
+Checkout is unavailable in this environment.|الدفع غير متاح في هذه البيئة.
+Your active subscription and included features|اشتراكك النشط والميزات المشمولة
+Billing period|دورة الفوترة
+Start date|تاريخ البدء
+Renewal / end date|تاريخ التجديد / الانتهاء
+Included features|الميزات المشمولة
+No active subscription yet. Choose a plan below to get started.|لا يوجد اشتراك نشط بعد. اختر خطة أدناه للبدء.
+Available Plans|الخطط المتاحة
+Current|الحالية
+Featured|مميزة
+Plan features in details|ميزات الخطة في التفاصيل
+View Plan|عرض الخطة
+No plans are available currently.|لا توجد خطط متاحة حاليًا.
+Payment / Billing History|سجل المدفوعات / الفوترة
+Demo|تجريبي
+View Details|عرض التفاصيل
+View Receipt|عرض الإيصال
+Retry|إعادة المحاولة
+No payments yet.|لا توجد مدفوعات بعد.
+Loading payment details…|جارٍ تحميل تفاصيل الدفع…
+Digital Card Platform|منصة البطاقات الرقمية
+Close|إغلاق
+Print Receipt|طباعة الإيصال
+Featured plan|خطة مميزة
+Close plan details|إغلاق تفاصيل الخطة
+Trial period:|الفترة التجريبية:
+Plan features|ميزات الخطة
+Checking checkout availability…|جارٍ التحقق من توفر الدفع…
+Demo checkout is unavailable|الدفع التجريبي غير متاح
+This checkout is only available when the payment provider is set to mock.|يتوفر هذا الدفع فقط عند تعيين مزود الدفع إلى الوضع التجريبي.
+Back to Billing|العودة إلى الفوترة
+Demo Payment|دفع تجريبي
+Payment Successful|نجح الدفع
+No real money was charged. Your local demo subscription is active.|لم تُخصم أموال حقيقية. اشتراكك التجريبي المحلي نشط.
+Demo Transaction ID|معرّف المعاملة التجريبية
+Plan|الخطة
+Amount|المبلغ
+Payment Method|طريقة الدفع
+Go to Billing|الانتقال إلى الفوترة
+Payment Failed|فشل الدفع
+This simulated payment was marked failed. No subscription was activated.|تم تسجيل هذه المحاكاة كدفعة فاشلة. لم يُفعّل أي اشتراك.
+Try Again|إعادة المحاولة
+← Back to Billing|العودة إلى الفوترة →
+Demo Checkout|الدفع التجريبي
+A local payment simulation for development and testing.|محاكاة دفع محلية للتطوير والاختبار.
+TEST MODE|وضع الاختبار
+Demo Payment · No real money will be charged.|دفع تجريبي · لن تُخصم أموال حقيقية.
+Select a valid plan from Plans & Billing.|اختر خطة صالحة من الخطط والفوترة.
+Demo checkout is unavailable. It only works when the backend is configured with APP_ENV=local and PAYMENT_PROVIDER=mock.|الدفع التجريبي غير متاح. يتطلب إعداد الخادم بالقيم APP_ENV=local وPAYMENT_PROVIDER=mock.
+Payment method|طريقة الدفع
+DEMO ONLY|تجريبي فقط
+Demo payment methods|طرق الدفع التجريبية
+UPI ID|معرّف UPI
+Demo UPI ID|معرّف UPI تجريبي
+This demo value is shown for checkout preview only. No UPI request is made.|هذه القيمة التجريبية لمعاينة الدفع فقط. لا يُرسل طلب UPI.
+Demo card details only — do not enter real card information.|بيانات بطاقة تجريبية فقط — لا تدخل معلومات بطاقة حقيقية.
+Card Number|رقم البطاقة
+Expiry|تاريخ الانتهاء
+CVV|رمز التحقق CVV
+Cardholder Name|اسم حامل البطاقة
+These display-only examples remain in this page and are never sent or saved.|تبقى هذه الأمثلة للعرض في هذه الصفحة ولا تُرسل أو تُحفظ.
+Select demo bank|اختر بنكًا تجريبيًا
+No banking API is contacted.|لا يتم الاتصال بواجهة برمجة مصرفية.
+Select demo wallet|اختر محفظة تجريبية
+No wallet provider is contacted.|لا يتم الاتصال بمزود محفظة.
+Choose simulated result|اختر نتيجة المحاكاة
+No real money will be charged. Demo values are not transmitted to a payment provider.|لن تُخصم أموال حقيقية. لا تُرسل القيم التجريبية إلى مزود الدفع.
+Order Summary|ملخص الطلب
+Total|الإجمالي
+Build your digital introduction|أنشئ تعريفك الرقمي
+Browse Templates|تصفح القوالب
+Find a design that feels like you|اعثر على تصميم يعكس شخصيتك
+View Analytics|عرض التحليلات
+See how people connect with you|تعرّف على تواصل الآخرين معك
+Manage Billing|إدارة الفوترة
+Your plan and payment history|خطتك وسجل مدفوعاتك
+QR code is ready for this published card.|رمز QR جاهز لهذه البطاقة المنشورة.
+Could not create QR code|تعذر إنشاء رمز QR
+QR image is unavailable.|صورة QR غير متاحة.
+Could not download QR image|تعذر تنزيل صورة QR
+Public card link copied.|تم نسخ رابط البطاقة العام.
+Could not access the clipboard. Open the card page to copy its link.|تعذر الوصول إلى الحافظة. افتح صفحة البطاقة لنسخ رابطها.
+View my digital business card|عرض بطاقة أعمالي الرقمية
+QR image unavailable|صورة QR غير متاحة
+Clipboard unavailable|الحافظة غير متاحة
+Card link copied. You can share it anywhere.|تم نسخ رابط البطاقة. يمكنك مشاركته في أي مكان.
+Unable to share QR code. You can download it or copy the card link instead.|تعذرت مشاركة رمز QR. يمكنك تنزيله أو نسخ رابط البطاقة.
+Preparing…|جارٍ التحضير…
+Generate / View QR|إنشاء / عرض رمز QR
+NFC link copied.|تم نسخ رابط NFC.
+Could not access the clipboard. Select and copy the NFC URL manually.|تعذر الوصول إلى الحافظة. حدد رابط NFC وانسخه يدويًا.
+NFC tag updated.|تم تحديث وسم NFC.
+Could not save NFC tag|تعذر حفظ وسم NFC
+NFC tag enabled.|تم تفعيل وسم NFC.
+NFC tag disabled.|تم تعطيل وسم NFC.
+Could not update NFC tag|تعذر تحديث وسم NFC
+NFC tag archived. Tap history is retained.|تمت أرشفة وسم NFC مع الاحتفاظ بسجل التقريب.
+Could not archive NFC tag|تعذرت أرشفة وسم NFC
+Unlimited|غير محدود
+Total Tags|إجمالي الوسوم
+Active Tags|الوسوم النشطة
+Recorded Taps|مرات التقريب المسجلة
+NFC tags are not included in your current plan.|وسوم NFC غير مشمولة في خطتك الحالية.
+You have reached the NFC tag limit for your current plan.|وصلت إلى الحد المسموح لوسوم NFC في خطتك الحالية.
+Disable|تعطيل
+Enable|تفعيل
+Edit NFC Tag|تعديل وسم NFC
+Name Your Tag|تسمية الوسم
+Choose Card|اختيار البطاقة
+Setup & Test|الإعداد والاختبار
+Saving…|جارٍ الحفظ…
+Save Changes|حفظ التغييرات
+Back|رجوع
+Enter a name for this NFC tag.|أدخل اسمًا لوسم NFC هذا.
+Choose one of your published cards.|اختر إحدى بطاقاتك المنشورة.
+Adding…|جارٍ الإضافة…
+Create and publish your digital card.|أنشئ بطاقتك الرقمية وانشرها.
+Add an NFC tag record in Dbizcard and connect it to the card.|أضف سجل وسم NFC في Dbizcard واربطه بالبطاقة.
+Copy the supplied NFC sharing URL.|انسخ رابط مشاركة NFC المقدم.
+Use a compatible NFC-writing device or application to program the physical tag.|استخدم جهازًا أو تطبيقًا متوافقًا لبرمجة وسم NFC الفعلي.
+Tap with another compatible phone to test the link.|قرّب هاتفًا متوافقًا آخر لاختبار الرابط.
+The public digital card opens in the phone’s browser.|تُفتح البطاقة الرقمية العامة في متصفح الهاتف.
+Copy your NFC link.|انسخ رابط NFC الخاص بك.
+Open a compatible NFC writer application or use a compatible NFC-writing device.|افتح تطبيق كتابة NFC متوافقًا أو استخدم جهاز كتابة متوافقًا.
+Write the URL to your NFC card or tag.|اكتب الرابط على بطاقة أو وسم NFC.
+Lock the tag only if you understand it may become permanently read-only; this is optional.|اقفل الوسم فقط إذا فهمت أنه قد يصبح للقراءة فقط نهائيًا؛ هذا اختياري.
+Tap with another compatible phone and use Test Link to verify the destination.|قرّب هاتفًا متوافقًا آخر واستخدم اختبار الرابط للتحقق من الوجهة.
+No taps yet|لا توجد مرات تقريب بعد
+Profile updated.|تم تحديث الملف الشخصي.
+Could not update profile|تعذر تحديث الملف الشخصي
+New password and confirmation do not match.|كلمة المرور الجديدة وتأكيدها غير متطابقين.
+Use at least 8 characters for your new password.|استخدم ٨ أحرف على الأقل لكلمة المرور الجديدة.
+Password updated.|تم تحديث كلمة المرور.
+Could not change password|تعذر تغيير كلمة المرور
+Updating…|جارٍ التحديث…
+Update Password|تحديث كلمة المرور
+Total Cards|إجمالي البطاقات
+Draft Cards|مسودات البطاقات
+QR Scans|عمليات مسح QR
+NFC Taps|مرات تقريب NFC
+Contacts|جهات الاتصال
+Renewal|التجديد
+No scheduled renewal|لا يوجد تجديد مجدول
+Card Views|مشاهدات البطاقة
+Contact Exchanges|تبادل جهات الاتصال
+Link Clicks|نقرات الروابط
+Card activity|نشاط البطاقة
+Recently updated cards (up to 100)|البطاقات المحدثة مؤخرًا (حتى ١٠٠)
+Digital Cards|البطاقات الرقمية
+Team Members|أعضاء الفريق
+Storage|التخزين
+Custom Branding|علامة تجارية مخصصة
+Custom Domain|نطاق مخصص
+Included|مشمول
+Not Included|غير مشمول
+Could not load payment details.|تعذر تحميل تفاصيل الدفع.
+You already have this plan.|لديك هذه الخطة بالفعل.
+Your free plan is active.|خطتك المجانية نشطة.
+Checkout is not configured for this environment.|الدفع غير مهيأ لهذه البيئة.
+Unable to load secure checkout. Please try again.|تعذر تحميل الدفع الآمن. أعد المحاولة.
+Checkout closed. No subscription change has been made. You can retry when ready.|أُغلق الدفع. لم يتغير الاشتراك. يمكنك المحاولة مجددًا عندما تكون مستعدًا.
+Confirming your payment…|جارٍ تأكيد دفعتك…
+Payment successful. Your plan has been activated.|نجح الدفع. تم تفعيل خطتك.
+Payment is awaiting confirmation. Your subscription will update after confirmation; refresh billing shortly.|الدفعة بانتظار التأكيد. سيتحدث اشتراكك بعد التأكيد؛ حدّث الفوترة قريبًا.
+We could not confirm your payment yet. Please refresh billing before trying again. A captured payment can also be confirmed by our secure webhook.|لم نتمكن من تأكيد دفعتك بعد. حدّث الفوترة قبل المحاولة مجددًا. يمكن أيضًا تأكيد الدفعة المحصلة عبر إشعار الخادم الآمن.
+Payment failed. Your subscription has not changed. You can retry in checkout or close it and try again.|فشل الدفع ولم يتغير اشتراكك. يمكنك إعادة المحاولة في نافذة الدفع أو إغلاقها والمحاولة مجددًا.
+Unable to start payment. Please try again.|تعذر بدء الدفع. أعد المحاولة.
+Custom|مخصصة
+Free|مجانية
+Contact Sales|تواصل مع المبيعات
+Forever|دائمًا
+Activate Free Plan|تفعيل الخطة المجانية
+Starting checkout…|جارٍ بدء الدفع…
+Upgrade / Change Plan|ترقية / تغيير الخطة
+Choose Plan|اختيار الخطة
+Plan Name|اسم الخطة
+Payment Reference|مرجع الدفع
+Provider|المزود
+Currency|العملة
+Paid Date|تاريخ الدفع
+Created Date|تاريخ الإنشاء
+Payment Receipt|إيصال الدفع
+Payment Details|تفاصيل الدفع
+Customer Name|اسم العميل
+Customer Email|بريد العميل الإلكتروني
+Provider Order ID|معرّف طلب المزود
+Provider Payment ID|معرّف دفعة المزود
+Subscription|الاشتراك
+Subscription Period|فترة الاشتراك
+Plan details and feature limits are shown below.|تفاصيل الخطة وحدود الميزات موضحة أدناه.
+None|لا يوجد
+UPI|UPI
+Card|بطاقة
+Net Banking|الخدمات المصرفية عبر الإنترنت
+Wallet|محفظة
+Demo Bank|بنك تجريبي
+Demo Wallet|محفظة تجريبية
+Demo payment could not be completed.|تعذر إكمال الدفع التجريبي.
+Demo User|مستخدم تجريبي
+Test National Bank|البنك الوطني التجريبي
+Sample Digital Bank|بنك رقمي نموذجي
+TestPay|TestPay
+Sample Wallet|محفظة نموذجية
+Processing payment…|جارٍ معالجة الدفع…
+active|نشط
+disabled|معطل
+archived|مؤرشف
+pending|قيد الانتظار
+paid|مدفوع
+failed|فاشل
+success|ناجح
+cancelled|ملغى
+expired|منتهي
+trialing|تجريبي
+monthly|شهري
+yearly|سنوي
+annual|سنوي
+month|شهر
+year|سنة
+lifetime|مدى الحياة
+one_time|مرة واحدة
+free|مجاني
+custom|مخصص
+mock|تجريبي
+card|بطاقة
+upi|UPI
+wallet|محفظة
+netbanking|الخدمات المصرفية عبر الإنترنت
+Source|المصدر
+No records yet.|لا توجد سجلات بعد.
+per {period}|لكل {period}
+{count} days|{count} أيام
+Pay {amount}|دفع {amount}
+Archive “{name}”? Its tap history will be kept, and the NFC link will stop working.|أرشفة «{name}»؟ سيُحتفظ بسجل التقريب وسيتوقف رابط NFC عن العمل.
+QR code for {name}|رمز QR لـ {name}
+Share QR for {name}|مشاركة رمز QR لـ {name}
+{name} - Digital Business Card|{name} - بطاقة أعمال رقمية
+Unlimited {label}|{label} غير محدود
+{label} Included|{label} مشمول
+{label} Not Included|{label} غير مشمول

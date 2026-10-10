@@ -1,0 +1,18 @@
+"use client";
+import { useCustomerLocale } from "@/lib/customer-locale";
+import Link from "next/link";
+import { useMemo, useState } from "react";
+import CardTable from "@/components/dashboard/CardTable";
+import { CardList, useUserData } from "@/components/dashboard/data";
+import { LoadState } from "@/components/dashboard/Widgets";
+const control = "rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm outline-none focus:border-blue-600";
+export default function CardsPage() {
+  const { t } = useCustomerLocale();
+  const [page, setPage] = useState(1); const [search, setSearch] = useState(""); const [status, setStatus] = useState(""); const [template, setTemplate] = useState("");
+  const state = useUserData<CardList>(`/user/cards?page=${page}&limit=100`);
+  const templates = useMemo(() => Array.from(new Set(state.data?.data.map(c => c.template_name).filter(Boolean) || [])), [state.data]);
+  const cards = useMemo(() => (state.data?.data || []).filter(c => (!status || c.status === status) && (!template || c.template_name === template) && (!search || `${c.name} ${c.company_name} ${c.slug}`.toLowerCase().includes(search.toLowerCase()))), [state.data, status, template, search]);
+  return <div className="space-y-6"><div className="flex flex-wrap items-center justify-between gap-4"><div><p className="text-xs font-bold uppercase tracking-[.18em] text-blue-600">{t("Workspace")}</p><h1 className="mt-2 text-3xl font-bold">{t("My Digital Cards")}</h1><p className="mt-2 text-sm text-slate-500">{t("Create, share, and manage your digital identity.")}</p></div><Link href="/dashboard/cards/new" className="rounded-xl bg-blue-600 px-5 py-3 text-sm font-semibold text-white">{t("+ Create Card")}</Link></div>
+    <section className="grid gap-3 rounded-2xl border border-slate-200 bg-white p-4 sm:grid-cols-3"><label className="text-xs font-semibold text-slate-500">{t("Search")}<input aria-label={t("Search cards")} className={`${control} mt-1 w-full font-normal`} value={search} onChange={e => setSearch(e.target.value)} placeholder={t("Card, company, slug")} /></label><label className="text-xs font-semibold text-slate-500">{t("Status")}<select aria-label={t("Filter by status")} className={`${control} mt-1 w-full font-normal`} value={status} onChange={e => setStatus(e.target.value)}><option value="">{t("All statuses")}</option>{["draft", "published", "archived"].map(x => <option key={x} value={x}>{t(x)}</option>)}</select></label><label className="text-xs font-semibold text-slate-500">{t("Template")}<select aria-label={t("Filter by template")} className={`${control} mt-1 w-full font-normal`} value={template} onChange={e => setTemplate(e.target.value)}><option value="">{t("All templates")}</option>{templates.map(x => <option key={x} value={x}>{x}</option>)}</select></label></section>
+    <LoadState {...state} retry={state.reload} />{state.data && <section className="overflow-hidden rounded-2xl border border-slate-200 bg-white"><CardTable cards={cards} onChanged={state.reload} /><div className="flex items-center justify-between border-t border-slate-100 p-5 text-sm text-slate-500"><span>{t("{shown} shown · {total} total", { shown: cards.length, total: state.data.pagination.total })}</span><div className="flex gap-4"><button disabled={page === 1} onClick={() => setPage(p => p - 1)} className="font-semibold text-blue-600 disabled:text-slate-300">{t("Previous")}</button><button disabled={page >= state.data.pagination.pages} onClick={() => setPage(p => p + 1)} className="font-semibold text-blue-600 disabled:text-slate-300">{t("Next")}</button></div></div></section>}</div>;
+}

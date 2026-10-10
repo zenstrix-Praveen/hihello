@@ -1,0 +1,35 @@
+{
+  "name": "digital-card-admin-web",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test": "node --test",
+    "test:browser": "node --test browser/navigation.cjs"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "latest",
+    "axios": "latest",
+    "clsx": "latest",
+    "lucide-react": "latest",
+    "next": "16.3.6",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react-hook-form": "latest",
+    "tailwind-merge": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "16.3.6",
+    "playwright-core": "^1.63.0",
+    "tailwindcss": "latest",
+    "typescript": "latest"
+  }
+}
